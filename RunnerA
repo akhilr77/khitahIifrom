@@ -1,0 +1,20 @@
+public class RunnerA
+{
+	public static void main(String args[])
+	{
+		MethodInterfaceA innerface = (a, b) -> {
+			float out = a/b;
+			String flow = "" + out;
+			try
+			{
+				flow = (flow).substring(0, flow.indexOf(".") + 3);
+			}
+			catch(Exception e)
+			{
+			}
+
+			System.out.printf(flow + "\n");
+		};
+
+	}
+}

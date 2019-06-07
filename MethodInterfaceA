@@ -1,0 +1,4 @@
+public interface MethodInterfaceA
+{
+	public void methodA(float a, float b);
+}
